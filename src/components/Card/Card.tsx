@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import { useNavigate } from "react-router-dom";
 import DefaultButton from "../Buttons/DefaultButton";
-import { CardInfo } from "../../types";
+import { CardItemTotalIndex } from "../../types";
 
-const Card: FC<CardInfo> = ({ item, total, itemIndex }) => {
+const Card: FC<CardItemTotalIndex> = ({ item, total, itemIndex }) => {
   const navigate = useNavigate();
   return (
     <div

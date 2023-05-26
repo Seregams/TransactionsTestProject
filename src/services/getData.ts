@@ -11,6 +11,8 @@ export function getData(): Promise<TransactionsData> {
       return response.json();
     })
     .catch(function (error) {
-      return console.log(`Error ${error}`);
+      console.log(`Error ${error}`);
+
+      throw error;
     });
 }

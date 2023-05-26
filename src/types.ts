@@ -23,7 +23,7 @@ export type TransactionItem = {
   phone: string;
 };
 
-export type CardInfo = {
+export type CardItemTotalIndex = {
   item: TransactionsPageInfo;
   total: number;
   itemIndex: number;
